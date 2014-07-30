@@ -1,0 +1,15 @@
+[filter "media"]
+        clean = git-media-clean %f
+        smudge = git-media-smudge %f
+[user]
+        name = <your-name-here>
+        email = <your-email-address-here>
+[alias]
+        f = ls-files
+        ci = commit
+        up = "!git remote update -p; git merge --ff-only @{u}"
+        co = checkout
+[credential]
+        helper = osxkeychain
+[core]
+        excludesfile = ~/.gitignore
